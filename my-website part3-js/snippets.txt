@@ -1,0 +1,25 @@
+               
+               
+               //Hide image
+               $('#hide-image').click(
+                  function(){
+                    
+                    var currentValue = $(this).html();
+                    
+                    if(currentValue === 'Hide Image'){
+                        $(this).prev('img').hide();
+                        $(this).html('Show Image');
+                    }
+                    else{
+                        $(this).prev('img').show();
+                        $(this).html('Hide Image');    
+                    }
+                }               
+               );
+               
+               <a href="#" id="hide-image">Hide Image</a>
+    
+               
+               //fadeIn fadeOut
+               
+               //slideIn slideOut

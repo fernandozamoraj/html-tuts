@@ -1,0 +1,51 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="./css/site.css" />
+        <script src="./scripts/jquery-1.7.2.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                $('#test2').click(function(){
+                    alert('Test 2');
+                });
+                
+                
+            });
+        </script>
+        <script>
+            var x = 1;
+            var y = 2;
+            
+            function handleClick(){
+                myFunction("handleClick");
+            }
+            
+            var myFunction = function(caller){
+                var result = x+y;
+                
+                console.log("myFunction called by " + caller);
+                alert("myFucntion was called by " + caller);
+                
+                alert("x + y = " + result);
+            }
+            
+        </script>
+    </head>
+    <body>
+    <div class="body-container">     
+        <ul id="main-menu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./my-resume.html">My Resume</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact-us.html">Contact Me</a></li>
+        <li><a href="./about.html">About</a></li>
+        </ul>        
+        
+        <button value="test" onclick="handleClick()"></button>    
+        <a href="#" id="test2">Test2</a>
+     </div>   
+    </body>
+</html>
