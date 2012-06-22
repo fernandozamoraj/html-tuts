@@ -3,6 +3,35 @@
 <head>
 <title>My Personal Home Page</title>
 <link rel="stylesheet" type="text/css" href="./css/site.css" />    
+    <script src="./scripts/jquery-1.7.2.js"></script>
+        <script>
+            $(document).ready(function(){
+                
+                $('#main-menu li a').mouseOver(function(){
+                    alert('Test 2');
+                });
+                
+                
+            });
+        </script>
+        <script>
+            var x = 1;
+            var y = 2;
+            
+            function handleClick(){
+                myFunction("handleClick");
+            }
+            
+            var myFunction = function(caller){
+                var result = x+y;
+                
+                console.log("myFunction called by " + caller);
+                alert("myFucntion was called by " + caller);
+                
+                alert("x + y = " + result);
+            }
+            
+        </script>
 </head>
 <body>
    <div class="body-container">  

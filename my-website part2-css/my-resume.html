@@ -2,26 +2,87 @@
 <html>
 	<head>
 	<title>My Personal Home Page - Resume</title>
-	<link rel="stylesheet" type="text/css" href="./css/site.css" />
+	<style type="text/css">
+		#left-nav{
+		   float: left;
+		   min-height: 100%;
+		   background-color: #cce;
+		   top: 10px;
+		   bottom: 0px;
+		   position: absolute;
+		   width: 200px;		   
+		}
+		
+		#banner{
+			background-color: #ecc;
+			width: 960px;	
+			height: 200px;	
+			margin-left: 200px;		
+		}
+		
+		#container{
+		   margin: auto;
+		   width: 960px;
+		   background-color: #cec;
+		   margin-left: 200px;
+		}
+		
+		ul#main-menu{
+		   list-style-type: none;
+		   padding-right: 20px;
+		   padding-left: 20px;
+		}
+		
+		.container-body{
+		   padding: 20px 20px;
+		}
+		
+		.container-footer{
+		   width: 100%;
+		   background-color: #ccc;
+		   height: 100px;
+		}
+		
+		.container-footer ul{
+		   list-style-type: none;
+		}
+	
+	</style>
 	</head>
 <body>
-   <ul id="main-menu">
-        <li><a href="./index.html">Home</a></li>
-	<li class="current-menu-location"><a href="./my-resume.html">My Resume</a></li>
-	<li><a href="./about.html">About</a></li>
-   </ul>
-   <h1>Skills</h1>
-   <ul>
-      <li>C++</li>
-	  <li>C#</li>
-	  <li>HTML</li>
-   </ul>
-   <p>
-		I am also an excellent communicator and can type 105 WPM.
-   
-   </p>
-   <p>
-       Active member of Epsilon Delta Pi
-   </p>
+
+   <div id="banner">
+   </div>
+   <div id="left-nav">
+	   <ul id="main-menu">
+			<li><a href="./index.html">Home</a></li>
+			<li class="current-menu-location"><a href="./my-resume.html">My Resume</a></li>
+			<li><a href="./about.html">About</a></li>
+	   </ul>
+   </div>
+   <div id="container">
+       <div class="container-body">
+		   <h1>Skills</h1>
+		   <ul>
+			  <li>C++</li>
+			  <li>C#</li>
+			  <li>HTML</li>
+		   </ul>
+		   <p>
+				I am also an excellent communicator and can type 105 WPM.		   
+		   </p>
+		   <p>
+			   Active member of Epsilon Delta Pi
+		   </p>
+		</div>
+		<div class="container-footer">
+		    <ul>
+			   <li><a href="http://www.google.com">google</a></li>
+			   <li><a href="http://www.google.com">google</a></li>
+			   <li><a href="http://www.google.com">google</a></li>
+			   <li><a href="http://www.google.com">google</a></li>
+			</ul>
+		</div>
+	</div> 
 </body>
 </html>
