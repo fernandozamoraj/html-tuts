@@ -1,12 +1,13 @@
-talk about color the hexadecimal system
+Things to cover
 
-interesting post on web colors
-http://www.websiteoptimization.com/speed/tweak/hex/
+******CSS*********
+Rounded corner
+Inline vs. Block
+Margins
+Resources
+HTML Dawg
+w3C Schools
 
-traps
-
-not closing your tags
-using the wrong selector #class or .id instead of .class and #id
-setting the class or id on the wrong element
-
-
+******BASIC HTML*****
+Resources
+HTML Dawg
