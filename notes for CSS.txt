@@ -1,3 +1,4 @@
+
 Things to cover
 
 ******CSS*********
@@ -11,3 +12,18 @@ w3C Schools
 ******BASIC HTML*****
 Resources
 HTML Dawg
+=======
+talk about color the hexadecimal system
+
+interesting post on web colors
+http://www.websiteoptimization.com/speed/tweak/hex/
+
+traps
+
+not closing your tags
+using the wrong selector #class or .id instead of .class and #id
+setting the class or id on the wrong element
+
+
+Notes for javascript
+Mention the debugging tools

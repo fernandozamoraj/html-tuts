@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+         <script src="./scripts/jquery-1.7.2.js"></script>
+        <script type="text/javascript">
+                        
+            $(document).ready(
+                         function(){
+                            
+                            $('#calculate-payment-button').click( function(){
+                                
+                                var principal = $('#principal').val();
+                                var interestRate = $('#interest-rate').val();
+                                var termInMonths = $('#term').val();
+                                
+                                var monthlyInterest = interestRate/(12*100);
+                                
+                                var monthlyPayment = principal * (monthlyInterest/(1-Math.pow(1 + monthlyInterest, -termInMonths)));
+                                
+                                $('#calculated-payment').html("Your Payment: $" + monthlyPayment.toFixed(2));
+                                
+                            });
+                            
+                             $('#get-schedule-button').click( function(){
+                               
+                                var schedule = "";
+                                var principal = $('#principal').val();
+                                var interestRate = $('#interest-rate').val();
+                                var termInMonths = $('#term').val();
+                                
+                                var monthlyInterest = interestRate/(12*100);
+                                
+                                var monthlyPayment = principal * (monthlyInterest/(1-Math.pow(1 + monthlyInterest, -termInMonths)));
+                                
+                                
+                                var totalInterest = 0.0;
+                                
+                                schedule = "<table><tr><th>Payment</th><th>Principal</th><th>Accumulated Interest</th></tr>";
+                                
+                                for(i = 1; i < 500; i++)
+                                {
+                                    
+                                    var currentInterest = principal * monthlyInterest;
+                                    principal = (principal + currentInterest) - monthlyPayment;
+                                    totalInterest += currentInterest;
+                                    
+                                    schedule = schedule + "<tr>";
+                                    schedule = schedule + "    <td>" + i +"</td>";
+                                    schedule = schedule + "    <td>" + principal + "</td>";
+                                    schedule = schedule + "    <td>" + totalInterest + "</td>";
+                                    schedule = schedule + "</tr>";
+                                    
+                                    if(principal <= monthlyPayment)
+                                        break;
+                                }
+                                
+                                schedule = schedule + "</table>";
+                                
+                                
+                                $('#amortization-schedule').html(schedule);
+                                
+                            });
+                            
+                        });
+        </script>
+        <style type="text/css">
+            .button{
+                text-decoration: none;
+                background-color: #cce;
+                color: #a33;
+                -moz-border-radius: 8px;
+                -webkit-border-radius: 8px;
+                padding: 5px;
+            }
+            
+            .button:hover{
+                background-color: #cec;
+                color: #a33;
+            }
+            
+            #calculated-payment{
+                background-color: #cff;
+                color: #66f;
+                padding: 40px;
+            }
+            
+            #amortization-schedule{
+                background-color: #ccc;
+                padding-top: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <h3>Ammortization and Payment Calculator</h3>
+        <form>
+            <label for="principal">Principal:</label>
+            <input id="principal" type="text" class="input-control"/>
+            <br/>
+            <label for="interest-rate">Interest Rate (e.g. 9.99)</label>
+            <input id="interest-rate" type="text" class="input-control"/>
+ 
+            <br/>
+            <label for="term">Term (in months e.g. 48)</label>
+            <input id="term" class="input-control"/>
+            <br/>
+            <br/>
+            <a href="#" id="calculate-payment-button" class="button">Calculate Payment</a>
+            <a href="#" id="get-schedule-button" class="button">Get Ammortization Schedule</a>
+        </form>
+        <div id="calculated-payment"></div>
+        <div id="amortization-schedule"></div>
+    </body>
+</html>
