@@ -2,10 +2,46 @@
 Things to cover
 
 ******CSS*********
-Rounded corner
-Inline vs. Block
+Not show everything under the sun but show the foundation
+
+sample style
+color
+background-color
+font
+
+
+selectors
+type selectors
+class selectors
+id selectors
+
+inline style
+vs embedded style
+vs external style
+browser style
+color
+background color
+font
+font family
 Margins
 Resources
+
+
+layouts
+div
+span
+tables are a no
+padding
+margins
+border
+rounded corners
+Display: Inline vs. Block
+Background Images
+
+reset.css
+normalize.css
+
+
 HTML Dawg
 w3C Schools
 
