@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style type="text/css">
+        body{
+            font: "Arial";
+            color: #aaa;
+            font-size: 1.5em;
+            background-color: #EEDDBB;
+        }
+        
+        h1{
+            color: #8888FF;
+        }        
+        
+        #main-menu a{
+            text-decoration: none;
+        }
+        
+        /*
+           This is more specific.. which means the Red Background and Yellow fonts are overridded
+           If we remove this rule it will fall back to those rules.
+        */
+        h1.special-announcement{
+            background-color:transparent;
+            color: Red;
+        }
+        
+        .less-important{
+            background-color: transparent;
+            color: Purple;
+        }
+        
+        #next-session{
+            background-color: transparent;
+            color: Black;
+            width: 50%;
+            margin: auto;
+            
+            
+            
+        }
+        
+    </style>
+  </head>
+  <body>
+     <div id="main-menu"> 
+        <a href='./page2.html'>Page 2</a>
+        <a href='http://www.google.com'>Google</a>
+     </div>   
+     <h1>Hello World!</h1>    
+     <p>Welcome to my page.  I hope you have as much fun reading it as I have had writing it</p>
+     <h1 class="special-announcement">Special Announcement</h1>
+     <p class="special-announcement">!!!Continue Attending These Classes to Become an HTML Ninja!!!!!</p>
+     <p  class="less-important">Or at least a purple belt</p>
+     <p class="special-announcement" id="next-session">
+        !!!In the next class you will learn all about layouts!!!!!
+        Although this uses the class special-annoucement, the class is overriden
+         by the id selector next-session.  This paragraph makes use of a couple of layout concepts.
+        It uses the width property to 50% (width: 50%;) and it also centers it on the page by using margin: auto.
+     </p>
+     
+   </body>
+</html>
