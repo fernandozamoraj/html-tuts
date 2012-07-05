@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>??</title>
+        <style type="text/css">
+        
+            #menu li{
+                background-color: Red;
+                color: White;
+                width: 100px;
+                margin: 0px;
+            }
+            
+            #menu li ul{
+                left: -9999em;
+                position: absolute;
+                z-index: 1000;
+                margin: 0px;
+            }
+            
+            #menu li:hover ul{
+                display: block;
+                left: auto;
+            }
+            
+            #menu li:hover li{
+                display: block;
+                left: auto;
+                background-color: Gray;
+                color: Red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="/">Main</a>
+                    <ul>
+                        <li><a href="item1.html">item1</a></li>
+                        <li><a href="item1.html">item2</a></li>
+                        <li><a href="item1.html">item3</a></li>
+                    </ul>    
+                </li>                    
+            </ul>            
+        </div>
+        <h1>Some text underneath</h1>
+        
+    </body>
+</html>
