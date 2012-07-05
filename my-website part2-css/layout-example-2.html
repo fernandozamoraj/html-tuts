@@ -2,7 +2,7 @@
 <html>
 	<head>
 	   <title>HTML Primer</title>
-       <link rel="stylesheet" href="./css/font-awesome.css">
+       <link rel="stylesheet" href="../css/font-awesome.css">
 	   <style type="text/css">
 	   
 	     body{
@@ -36,7 +36,7 @@
 			 clear: both;
 			 width: 100%;
              margin: auto;
-             height:230px;
+			 min-height: 230px;
              font-size: 2em;
 			 background-image: url('./images/cool-wallpapers-16-banner.jpg');
 			 background-repeat: no-repeat;
@@ -55,7 +55,8 @@
 			  background-color: #fff;
               color: #13f;
 			  min-height: 400px;
-         	  background-repeat: no-repeat;
+              background-image: url('./images/dl_image.png');
+			  background-repeat: no-repeat;
 		  }
 		  
 		  #main-content p{
@@ -66,9 +67,11 @@
 		  #right-nav{
 		      width: 30%;
 			  float: right;
+			  background-color: #556;
 			  margin-top: 0px;
 			  min-height: 400px;
-              overflow: auto;
+              /*background-image: url('./images/bg_nav.png');*/
+              background-repeat: repeat-x;
 		  }
 		  
 		  #footer{
@@ -142,23 +145,6 @@
          #first-footer-cell{
             margin-left: 10%
         }
-
-        #main-content div{
-            padding: 10px;
-        }
-
-        #main-content div{
-            width: 260px;
-            height: 260px;
-            padding: 10px;
-            display: inline;
-        }
-        
-        #main-content div img{
-           padding: 20px;
-            width: 200px;
-            height: 200px;
-        }
 		  
 	   </style>
 	</head>
@@ -166,7 +152,6 @@
 	    <div id="main-container">
           <div id="header">
             <img style="float:left;" src="./images/html5-bw-log.jpg"/>
-            <h1>&lt;Web Development/&gt;</h1>
 		  </div>
 		  <div class="promo-bar">
 		    <div class="cell-33">
@@ -201,47 +186,44 @@
 			</ul>
 		  </div>
 		  <div id="main-content">
-               <div><img src="./images/head_body_on_neck.jpg" alt="head boy image"/></div>
-               <div><img src="./images/eat_sleep_code.jpg" alt="head boy image"/></div>
-               <div><img src="./images/eat_sleep_code.jpg" alt="head boy image"/></div>
-               <div><img src="./images/head_body_on_neck.jpg" alt="head boy image"/></div>
-          </div>
+
+		  </div>
 		  <div id="footer">
 		     <div id="first-footer-cell" class="cell-20">
                 <h4>HTML</h4>
                 <ul>
-                    <li><a href="http://net.tutsplus.com/">tuts-plus</a></li>
-                    <li><a href="">w3c-schools</a></li>
-                    <li><a href="http://htmldog.com/">html-dog</a></li>
+                    <li><a href="">HTML Tuts</a></li>
+                    <li><a href="">W3CSchools</a></li>
+                    <li><a href="">HTML Dog</a></li>
                 </ul>
             </div>
             <div class="cell-20">
                 <h4>Style</h4>
                 <ul>
-                    <li><a href="http://www.w3schools.com/css/">w3c-chools-css</a></li>
-                    <li><a href="http://webdesignledger.com/tips/html5-css3-take-your-design-to-another-level">web-design-ledger</a></li>
-                    <li><a href="http://www.freecsstemplates.org/">free-css-templates</a></li>
+                    <li><a href="http://www.w3schools.com/css/">W3C Schools</a></li>
+                    <li><a href="http://webdesignledger.com/tips/html5-css3-take-your-design-to-another-level">HTML5 and CSS3</a></li>
+                    <li><a href="http://www.freecsstemplates.org/">Free CSS Templates</a></li>
                 </ul>
             </div>
             <div class="cell-20">
                 <h4>JQuery</h4>
                 <ul>
-                    <li><a href="http://jquery.com/">jquery</a></li>
-                    <li><a href="http://jqueryui.com/">jqueryUI</a></li>
-                    <li><a href="http://www.w3schools.com/jquery/default.asp">w3c-schools-jquery</a></li>
+                    <li><a href="http://jquery.com/">jQuery</a></li>
+                    <li><a href="http://jqueryui.com/">jQueryUI</a></li>
+                    <li><a href="http://www.w3schools.com/jquery/default.asp">W3C Schools</a></li>
                 </ul>
             </div>       
             <div class="cell-20">
                 <h4>Affiliates</h4>
                 <ul>
-                    <li><a href="http://www.deejayhandyman.com/">deejay-handyman</a></li>
-                    <li><a href="http://followmetotheweb.apphb.com/">follow-me-to-web</a></li>
-                    <li><a href="http://www.hairbankofkilleen.com/">hairbank</a></li>
+                    <li><a href="http://www.deejayhandyman.com/">DeeJay HandyMan</a></li>
+                    <li><a href="http://followmetotheweb.apphb.com/">Follow Me to Web</a></li>
+                    <li><a href="http://www.hairbankofkilleen.com/">Hairbank</a></li>
                 </ul>
             </div>
 		  </div>
           <div id="credits">
-             <p>designed by: fernando.zamora.jimenez@gmail.com</p>    
+             <p>Designed by: fernando.zamora.jimenez@gmail.com</p>    
           </div>  
 		<div><!--MAIN CONTAINTER-->  
 	</body>

@@ -33,3 +33,49 @@ body{
   background-color: #cccccc;
 }
 
+body{
+    font-family: "Arial";
+    color: #aaa;
+    font-size: 1.5em;
+    background-color: #EEDDBB;
+}
+
+h1{
+    color: #8888FF;
+}        
+
+#main-menu a{
+    text-decoration: none;
+}
+
+.special-announcement{
+    background-color: Yellow;
+    color: Red;
+}
+/*
+   This is more specific.. which means the Red Background and Yellow fonts are overridded
+   If we remove this rule it will fall back to those rules.
+*/
+h1.special-announcement{
+    background-color:transparent;
+}
+
+.less-important{
+    background-color: transparent;
+    color: Purple;
+}
+
+#next-session{
+    background-color: transparent;
+    color: Black;
+    width: 50%;
+    margin: auto;
+}
+
+.markup-notes{
+    color: white;
+    background-color: Purple;
+    font-size: .75em;
+}
+  
+
