@@ -5,216 +5,239 @@
         <link type="text/css" rel="stylesheet" href="./foundation3/stylesheets/app.css"/>
         <link type="text/css" rel="stylesheet" href="./foundation3/stylesheets/ie.css"/>
         <link type="text/css" rel="stylesheet" href="./foundation3/stylesheets/foundation.css"/>
-        <style>
+        <style type="text/css">
             .display{
-                background-color: #bbb;
+                background-color: #eee;
             }
             
-            .cell{
-                border-left: 2px solid #888;
-                border-right: 2px solid #888;
-                border-bottom: 2px solid #888;
+
+            
+            .header{
+                background-color: #e5e5e5;
+            }
+            
+            body{
+                background-image: url('./images/bg_main.png');
+                background-repeat: repeat-x;
+            }
+            
+            
+            .banner{
+               text-align: center;
+            background-color: #8cc;
+               height: 100px;
+            line-height: 30px;
+            
+            }
+            
+            .banner h4{
+                vertical-align: middle;
+                position: absolute;
+                top: 0;
+            }
+            
+            .main-container{
+                background-color: #f1f8f8;
             }
         </style>
-        
-
-        
     </head>
     <body>
-        
-        
-        <div class="row">
-            <div class="four columns">
-                <h2 class="header">Learn</h2>
-                <h4 class="subheader">List to the presentation to learn all you can about HTML. During this time feel free to munch away.</h4>    
-            </div>
-            <div class="four columns">
-                 <h2 class="header">Write</h2>
-                 <h4 class="subheader">Once you are done eating you can beging on the practical exercises. Practice makes perfect.</h4>    
-            </div>
-            <div class="four columns">
-                 <h2 class="header">Test</h2>
-                 <h4 class="subheader">Test your scripts with the avaialble tools. Also ask from help from the instructor.</h4>    
-            </div>            
-        </div>
-                          
-        <div class="row"> <!--NAV BAR-->
-            <section role="main">
-            <div class="row">
-                <div class="twelve columns">
-                    <ul class="nav-bar">
-                        <li class="six columns"><a href="#" >diggableGeek.com</a></li>
-                        <li class="has-flyout active">
-                        <a href="#">Nav Item 2</a>
-                        <a href="#" class="flyout-toggle"><span> </span></a>
-                        <ul class="flyout">
-                            <li><a href="#">Sub Nav Item 1</a></li>
-                            <li><a href="#">Sub Nav Item 2</a></li>
-                            <li><a href="#">Sub Nav 3</a></li>
-                            <li><a href="#">Sub Nav 4</a></li>
-                            <li><a href="#">Sub Nav Item 5</a></li>
-                        </ul>
-                        </li>
-                        <li class="has-flyout">
-                        <a href="#">Nav Item 3</a>
-                        <a href="#" class="flyout-toggle"><span> </span></a>
-                        <div class="flyout">
-                            <h5>Regular Dropdown</h5>
-                            <div class="row">
-                            <div class="six columns">
-                                <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
-                            </div>
-                            <div class="six columns">
-                                <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
-                            </div>
-                            </div>
-                        </div>
-                        </li>
-                        <li class="has-flyout">
-                        <a href="#">Nav Item 4</a>
-                        <a href="#" class="flyout-toggle"><span> </span></a>
-                        <div class="flyout large right">
-                            <h5>Large Dropdown</h5>
-                            <div class="row">
-                            <div class="four columns">
-                                <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
-                                <p>This is example text 2. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
-                            </div>
-                            <div class="four columns">
-                                <p>wHICH IS WHIC This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
-                                <p>tHIS IS IT text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
-                            </div>
-                            <div class="four columns">
-                                <img src="http://placehold.it/200x250" />
-                            </div>
-                            </div>
-                        </div>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-        </div>   <!--NAV BAR-->  
-        
-        <div class="row">
+        <div class="banner"><h4 style="text-align: center;">DO MORE WITH ZURB FOUNDATION</h4></div>
+        <div class="row main-container">
+            
             <div class="twelve columns">
-                <div id="featured">
-                    <div>
-                       <img src="./images/demo2.jpg" />
+                <div class="row header">
+                    <div class="four columns">
+                        <h2 class="header">Learn</h2>
+                        <h4 class="subheader">List to the presentation to learn all you can about HTML. During this time feel free to munch away.</h4>    
                     </div>
-                    <div>
-                        <img src="./images/demo1.jpg" />
+                    <div class="four columns">
+                        <h2 class="header">Write</h2>
+                        <h4 class="subheader">Once you are done eating you can beging on the practical exercises. Practice makes perfect.</h4>    
                     </div>
-                    <div>
-                      <img src="./images/demo3.jpg" />
+                    <div class="four columns">
+                        <h2 class="header">Test</h2>
+                        <h4 class="subheader">Test your scripts with the avaialble tools. Also ask from help from the instructor.</h4>    
+                    </div>            
+                </div>
+                                
+                <div class="row"> <!--NAV BAR-->
+                    <section role="main">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <ul class="nav-bar">
+                                <li class="six columns"><a href="#" >diggableGeek.com</a></li>
+                                <li class="has-flyout active">
+                                <a href="#">Nav Item 2</a>
+                                <a href="#" class="flyout-toggle"><span> </span></a>
+                                <ul class="flyout">
+                                    <li><a href="#">Sub Nav Item 1</a></li>
+                                    <li><a href="#">Sub Nav Item 2</a></li>
+                                    <li><a href="#">Sub Nav 3</a></li>
+                                    <li><a href="#">Sub Nav 4</a></li>
+                                    <li><a href="#">Sub Nav Item 5</a></li>
+                                </ul>
+                                </li>
+                                <li class="has-flyout">
+                                <a href="#">Nav Item 3</a>
+                                <a href="#" class="flyout-toggle"><span> </span></a>
+                                <div class="flyout">
+                                    <h5>Regular Dropdown</h5>
+                                    <div class="row">
+                                    <div class="six columns">
+                                        <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+                                    </div>
+                                    <div class="six columns">
+                                        <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </li>
+                                <li class="has-flyout">
+                                <a href="#">Nav Item 4</a>
+                                <a href="#" class="flyout-toggle"><span> </span></a>
+                                <div class="flyout large right">
+                                    <h5>Large Dropdown</h5>
+                                    <div class="row">
+                                    <div class="four columns">
+                                        <p>This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+                                        <p>This is example text 2. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+                                    </div>
+                                    <div class="four columns">
+                                        <p>wHICH IS WHIC This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+                                        <p>tHIS IS IT text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text. This is example text.</p>
+                                    </div>
+                                    <div class="four columns">
+                                        <img src="http://placehold.it/200x250" />
+                                    </div>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                </div>   <!--NAV BAR-->  
+                
+                <div class="row">
+                    <div class="twelve columns">
+                        <div id="featured">
+                            <div>
+                            <img src="./images/demo2.jpg" />
+                            </div>
+                            <div>
+                                <img src="./images/demo1.jpg" />
+                            </div>
+                            <div>
+                            <img src="./images/demo3.jpg" />
+                            </div>
+                            <div>
+                                <h4 class="subheader">This is some random text to see if it will display it.</h4>
+                                <a class="button">Test Button</a>
+                            </div>
+                        </div>                
+                    </div>    
+                </div>
+                
+                <hr/>
+                <div class="row">
+                    <div class="four columns">
+                        <h3 class="subheader">Click the button to see the modal dialog</h3>
                     </div>
-                    <div>
-                        <h4 class="subheader">This is some random text to see if it will display it.</h4>
-                        <a class="button">Test Button</a>
+                    <div class="two columns">
+                        <a href="#" class="button" id="reveal-modal">Click Me For A Modal</a>
                     </div>
-                </div>                
+                </div>
+                        
+                
+                <div id="myModal" class="reveal-modal">
+                    <h2>Awesome. I have it.</h2>
+                    <p class="lead">Your couch.  I it's mine.</p>
+                    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+        
+                
+                <hr/>
+                <div class="row">
+                    <div class="seven columns centered"><h1 class="header">Standard Columns</h1></div>
+                </div>
+                
+                <div class="row display"> <!--Standard Columns-->
+                    <div class="row"> 
+                        <div class="one column cell">.one column</div>
+                        <div class="eleven columns cell">.eleven columns</div>    
+                    </div>  
+                    <div class="row"> 
+                        <div class="two columns cell">.two columns</div>
+                        <div class="ten columns cell">.ten columns</div>    
+                    </div> 
+                    <div class="row"> 
+                        <div class="six columns cell">.six columns</div>
+                        <div class="six columns cell">.six columns</div>    
+                    </div> 
+                    <div class="row"> 
+                        <div class="four columns cell">.four columns</div>
+                        <div class="four columns cell">.four columns</div>
+                        <div class="four columns cell">.four columns</div>
+                    </div> 
+                    <div class="row"> 
+                        <div class="four columns cell">.four columns</div>
+                        <div class="four columns cell">.four columns</div>
+                    </div> 
+                    <div class="row"> 
+                        <div class="four columns cell">.four columns</div>
+                    </div> 
+                    <div class="row"> 
+                        <div class="four columns cell offset-by-eight">.four columns offset-by-eight</div>
+                    </div> 
+                    <div class="row"> 
+                        <div class="four columns cell centered">.four columns centered</div>
+                    </div> 
+                </div><!--Standard Columns-->
+                
+                <hr/>
+                <div class="row">
+                    <div class="seven columns centered"><h1 class="header">Mobile Columns</h1></div>
+                </div>
+                <div class="row">
+                    <div class="row display">
+                        <div class="three mobile-one columns">
+                            .three.mobile-one.columns
+                        </div>
+                        <div class="nine mobile-three columns">
+                            .nine.mobile-three.columns
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div class="row">
+                    <div class="seven columns centered"><h1 class="header">Form Example</h1></div>
+                </div>
+                
+                <div class="row">
+                    <div class="twelve columns">
+                        <form>
+                            <label>This is a label.</label>
+                            <input type="text" placeholder="Standard Input" />
+                            
+                            <label>Address</label>
+                            <input type="text" class="twelve" placeholder="Street" />
+                            <div class="row">
+                                <div class="six columns">
+                                <input type="text" placeholder="City" />
+                                </div>
+                                <div class="three columns">
+                                <input type="text" placeholder="State" />
+                                </div>
+                                <div class="three columns">
+                                <input type="text" placeholder="ZIP" />
+                                </div>
+                            </div>  
+                        </form> 
+                    </div>
+                </div>
             </div>    
         </div>
-        
-        <hr/>
-        <div class="row">
-            <div class="four columns">
-                <h3 class="subheader">Click the button to see the modal dialog</h3>
-            </div>
-            <div class="two columns">
-                <a href="#" class="button" id="reveal-modal">Click Me For A Modal</a>
-            </div>
-        </div>
-                
-           
-        <div id="myModal" class="reveal-modal">
-            <h2>Awesome. I have it.</h2>
-            <p class="lead">Your couch.  I it's mine.</p>
-            <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-            <a class="close-reveal-modal">&#215;</a>
-        </div>
-
-        
-        <hr/>
-        <div class="row">
-            <div class="seven columns centered"><h1 class="header">Standard Columns</h1></div>
-        </div>
-        
-        <div class="row display"> <!--Standard Columns-->
-            <div class="row"> 
-                <div class="one column cell">.one column</div>
-                <div class="eleven columns cell">.eleven columns</div>    
-            </div>  
-            <div class="row"> 
-                <div class="two columns cell">.two columns</div>
-                <div class="ten columns cell">.ten columns</div>    
-            </div> 
-            <div class="row"> 
-                <div class="six columns cell">.six columns</div>
-                <div class="six columns cell">.six columns</div>    
-            </div> 
-            <div class="row"> 
-                <div class="four columns cell">.four columns</div>
-                <div class="four columns cell">.four columns</div>
-                <div class="four columns cell">.four columns</div>
-            </div> 
-            <div class="row"> 
-                <div class="four columns cell">.four columns</div>
-                <div class="four columns cell">.four columns</div>
-            </div> 
-            <div class="row"> 
-                <div class="four columns cell">.four columns</div>
-            </div> 
-            <div class="row"> 
-                <div class="four columns cell offset-by-eight">.four columns offset-by-eight</div>
-            </div> 
-            <div class="row"> 
-                <div class="four columns cell centered">.four columns centered</div>
-            </div> 
-        </div><!--Standard Columns-->
-        
-        <hr/>
-        <div class="row">
-            <div class="seven columns centered"><h1 class="header">Mobile Columns</h1></div>
-        </div>
-        <div class="row">
-            <div class="row display">
-                <div class="three mobile-one columns">
-                    .three.mobile-one.columns
-                </div>
-                <div class="nine mobile-three columns">
-                    .nine.mobile-three.columns
-                </div>
-            </div>
-        </div>
-        <hr/>
-        <div class="row">
-            <div class="seven columns centered"><h1 class="header">Form Example</h1></div>
-        </div>
-        
-        <div class="row">
-            <div class="twelve columns">
-                <form>
-                    <label>This is a label.</label>
-                    <input type="text" placeholder="Standard Input" />
-                    
-                    <label>Address</label>
-                    <input type="text" class="twelve" placeholder="Street" />
-                    <div class="row">
-                        <div class="six columns">
-                        <input type="text" placeholder="City" />
-                        </div>
-                        <div class="three columns">
-                        <input type="text" placeholder="State" />
-                        </div>
-                        <div class="three columns">
-                        <input type="text" placeholder="ZIP" />
-                        </div>
-                    </div>  
-                </form> 
-            </div>
-        </div>
-        
-
 
            <!--Foudation scripts-->
         <!--These scripts and their order is extremely important-->

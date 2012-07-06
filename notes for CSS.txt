@@ -28,18 +28,31 @@ Resources
 
 
 layouts
+block level elements start on a new line
+block level elements can contain other blocks or other inline
+inline elements doe not create a new line
+positioning
+     static
+     fixed
+     relative - offset
+     absolute
+list-style-type: none
 div
 span
 tables are a no
+overflow
 padding
 margins
 border
 rounded corners
+border radius
+box shadow
 Display: Inline vs. Block
 Background Images
 flow
 float
 tools: chrome
+
 
 reset.css
 normalize.css
