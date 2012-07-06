@@ -37,6 +37,9 @@ border
 rounded corners
 Display: Inline vs. Block
 Background Images
+flow
+float
+tools: chrome
 
 reset.css
 normalize.css
