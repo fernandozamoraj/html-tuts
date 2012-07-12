@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Java Script Demo</title>
+        <script>
+            function handleClick(){
+                var name = document.forms[0].elements[0].value;
+                
+                alert("Hello " + name); 
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>Enter your name:</label>
+            <input type="text"/>
+            <button onclick="handleClick()">Submit</button>
+        </form>
+    </body>
+</html>

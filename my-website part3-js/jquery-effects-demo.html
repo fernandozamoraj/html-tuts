@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Add Class Demo</title>
+        <script src="./scripts/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( 
+                  function(){
+                        $('#emphasize-link').click(
+
+                            function(){
+                                   $('p').addClass('emphasize');
+                              }
+                            );
+                            
+                       $('#de-emphasize-link').click(
+                             function(){
+                                   $('p').removeClass('emphasize');
+                              }
+                            ); 
+                            
+                        $('#fade-out-link').click(
+                             function(){
+                                    $('p').fadeOut('slow');  
+                              }
+                            );
+                            
+                        $('#fade-in-link').click(
+                             function(){
+                                    $('p').fadeIn('slow');  
+                              }
+                            );
+                            
+                        $('#slide-down-link').click(
+                             function(){
+                               $('p').slideDown('slow'); 
+                            });
+                            
+                        //implement slideup    
+    
+                    }
+                );
+        </script>
+        
+        
+        <style type="text/css">
+            p{
+                width: 200px;
+                margin: auto;
+            }
+            
+            .emphasize{
+                 font-style: italic;
+                font-size: 2em;
+                color: Red;
+                background-color: #ccc;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <a id="emphasize-link" href="#">Emphasize</a>
+        <a id="de-emphasize-link" href="#">De Emphasize</a>
+        <a id="fade-out-link" href="#">Fade Out</a>
+        <a id="fade-in-link" href="#">Fade In</a>
+        <a id="slide-down-link" href="#">Slide Down</a>
+        <p>This is a really long paragraph. This is a really long paragraph. This is a really long paragraph. This is a really long paragraph. This is a really long paragraph. This is a really long paragraph. This is a really long paragraph. This is a really long paragraph. </p>
+    </body>
+</html>
