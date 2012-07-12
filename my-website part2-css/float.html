@@ -17,6 +17,17 @@
             #picture2{
                 float: right;
             }
+			
+			.log-no-float{
+			  
+               width: 500px;			   
+			}
+			
+			/*No floating allow on this paragraph*/
+			.log-no-float p{
+			    clear: both;
+			}
+			 
             
         </style>
     </head>
@@ -38,6 +49,15 @@
                This is some sample text to show how float affects it. This is some sample text to show how float affects it. This is some sample text to show how float affects it. 
                This is some sample text to show how float affects it. This is some sample text to show how float affects it. This is some sample text to show how float affects it. 
                This is some sample text to show how float affects it. This is some sample text to show how float affects it. This is some sample text to show how float affects it. </p>
+        </div>
+		
+		<div class="log-no-float">
+            <h3>Sample with picture floating left but the paragraph has the clear: both; property set. To no allow floating.</h3>
+            <img id="picture1" src="./images/small-gear.png" alt="gear picture"/>
+            <p>This is some sample text to show how float affects it. This is some sample text to show how float affects it. This is some sample text to show how float affects it. 
+            This is some sample text to show how float affects it. This is some sample text to show how float affects it. This is some sample text to show how float affects it. 
+            This is some sample text to show how float affects it. This is some sample text to show how float affects it. This is some sample text to show how float affects it. 
+            This is some sample text to show how float affects it. This is some sample text to show how float affects it. This is some sample text to show how float affects it. </p>
         </div>
     </body>
 </html>
